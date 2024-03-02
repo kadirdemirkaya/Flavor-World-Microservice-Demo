@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "ImageService";
+
+service GrpcImageUser {
+	rpc UserImageAdd(UserImageAddModel) returns (UserImageAddModelResponse);
+}
+
+message UserImageAddModel {
+	UserModel UserModel = 1;
+	FileUploadModel FileUploadModel = 2;
+}
+
+message FileUploadModel {
+	string Name = 1;
+    string Path = 2;
+	bytes Files = 3;
+}
+
+message UserModel {
+	string Email = 1;
+	string FullName = 2;
+	string Id = 3;
+}
+
+message UserImageAddModelResponse {
+	bool Result = 1;
+}

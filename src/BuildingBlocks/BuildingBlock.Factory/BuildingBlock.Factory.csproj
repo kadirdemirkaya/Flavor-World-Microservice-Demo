@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingBlock.Base\BuildingBlock.Base.csproj" />
+    <ProjectReference Include="..\BuildingBlock.Dapper\BuildingBlock.Dapper.csproj" />
+    <ProjectReference Include="..\BuildingBlock.Elasticsearch\BuildingBlock.Elasticsearch.csproj" />
+    <ProjectReference Include="..\BuildingBlock.InMemory\BuildingBlock.InMemory.csproj" />
+    <ProjectReference Include="..\BuildingBlock.Jwt\BuildingBlock.Jwt.csproj" />
+    <ProjectReference Include="..\BuildingBlock.MsSql\BuildingBlock.MsSql.csproj" />
+    <ProjectReference Include="..\BuildingBlock.RabbitMQ\BuildingBlock.RabbitMQ.csproj" />
+    <ProjectReference Include="..\BuildingBlock.Redis\BuildingBlock.Redis.csproj" />
+  </ItemGroup>
+
+</Project>

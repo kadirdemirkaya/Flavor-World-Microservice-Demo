@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Behaviors\" />
+    <Folder Include="Common\Events\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlock.Base\BuildingBlock.Base.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlock.Logger\BuildingBlock.Logger.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlock.Mapper\BuildingBlock.Mapper.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlock.MsSql\BuildingBlock.MsSql.csproj" />
+    <ProjectReference Include="..\BasketService.Domain\BasketService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
