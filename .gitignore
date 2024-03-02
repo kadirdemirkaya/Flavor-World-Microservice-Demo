@@ -401,8 +401,8 @@ FodyWeavers.xsd
 /data/
 /.obj/
 
-/src/Deployment/K8S/*
-/src/Deployment/Docker/*
+**/K8S/*
+**/Docker/*
 
 **/Logs/*
 **/Migrations/*

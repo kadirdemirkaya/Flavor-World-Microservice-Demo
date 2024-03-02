@@ -1,4 +1,6 @@
-﻿namespace AuthenticationService.Test.Dtos
+﻿using AuthenticationService.Test.Enums;
+
+namespace AuthenticationService.Test.Dtos
 {
     public class CreateUserDto
     {
